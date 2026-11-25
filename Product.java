@@ -13,4 +13,25 @@ public class Product {
         this.category = category;
         this.price = price;
     }
+
+    public String getBarcode() {
+        return barcode;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    @Override
+    public String toString() {
+        return name + " (£" + price + ")";
+    }
 }
